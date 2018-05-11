@@ -74,6 +74,7 @@ function SocksProxyAgent(opts) {
     var auth = proxy.auth.split(':');
     proxy.authentication = { username: auth[0], password: auth[1] };
     proxy.userid = auth[0];
+    proxy.password = auth[1];
   }
   this.proxy = proxy;
 }
